@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+
+.title {
+    width: 100px;
+    height: 100vh;
+    align-items: center;
+}
+
+.titleText {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
