@@ -25,6 +25,7 @@ body {
     white-space: nowrap;
     border-right: 2px solid white;
     vertical-align: middle;
+    margin-bottom: 0px;
 }
 
 .anim-typewriter {
@@ -38,9 +39,12 @@ body {
     to{width: 100%;}
 }
 
+.socialButtonList {
+    padding: 0px;
+}
+
 .socialButton {
     background-color: white;
-    color: black;
     height: auto;
     border-radius: 50%;
     width: 65px;
@@ -52,6 +56,11 @@ body {
     border: 3px solid white;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.socialButton i {
+    color: black;
 }
 
 .socialButton:hover {
@@ -60,4 +69,8 @@ body {
     color: white;
     width: 65px;
     height: 65px;
+}
+
+.socialButton:hover i {
+    color: white;
 }
