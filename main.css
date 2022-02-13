@@ -58,6 +58,15 @@ body {
     transition: 0.3s ease-in-out;
     margin-right: 20px;
 }
+.socialButtonList li {
+    opacity: 0;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 .socialButton i {
     color: black;
