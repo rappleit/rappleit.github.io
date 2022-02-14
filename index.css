@@ -4,16 +4,12 @@ html {
 
 body {
     background-color: #011627;
-    width: 80%;
-    height: 100%;
-    display: inline-flex;
 }
 
 .titleBox {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    display: inline-block; 
     align-items: center;
     margin-left: 3%;
 }
@@ -147,7 +143,7 @@ body {
 }
 
 #projects:hover {
-    background-color: #54e9da;
+    background-color: #48ddce;
 }
 
 
