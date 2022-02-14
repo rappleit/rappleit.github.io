@@ -3,9 +3,10 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: #011627;
     width: 80%;
     height: 100%;
+    display: inline-flex;
 }
 
 .titleBox {
@@ -23,7 +24,7 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid white;
+    border-right: 2px solid #FDFFFC;
     vertical-align: middle;
     margin-bottom: 0px;
 }
@@ -44,7 +45,7 @@ body {
 }
 
 .socialButton {
-    background-color: white;
+    background-color: #FDFFFC;
     height: auto;
     border-radius: 50%;
     width: 65px;
@@ -69,17 +70,85 @@ body {
   }
 
 .socialButton i {
-    color: black;
+    color: #011627;
 }
 
 .socialButton:hover {
     transform: scale(1.1);
-    background-color: black;
-    color: white;
+    background-color: #011627;
+    color: #FDFFFC;
     width: 65px;
     height: 65px;
 }
 
 .socialButton:hover i {
-    color: white;
+    color: #FDFFFC;
 }
+
+.navBar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    align-items: flex-end;
+}
+
+.navItem {
+    display: flex;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navLink {
+    color: #FDFFFC;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    transition: width 0.3s ease-out;
+    opacity: 0;
+}
+
+.navLink i {
+    margin: 10px;
+}
+
+.navLabel {
+    opacity: 0;
+}
+
+#aboutMe {
+    background-color: #e71d36;
+}
+
+#aboutMe:hover {
+    background-color: #fd3950;
+}
+
+#experience {
+    background-color: #ff9f1c;
+}
+
+#experience:hover {
+    background-color: #ffb349;
+}
+
+#projects {
+    background-color: #2ec4b6;
+}
+
+#projects:hover {
+    background-color: #54e9da;
+}
+
+
+
