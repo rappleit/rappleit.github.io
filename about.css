@@ -29,11 +29,18 @@ header a:hover {
 body {
     background-color: #011627;
     height: 100%;
+    overflow: overlay;
 }
 
 h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    color: #FDFFFC;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #FDFFFC;
 }
 
 p {
@@ -100,7 +107,7 @@ section {
     position: absolute;
     top: 25%;
     left: 50%;
-    border: 4px solid white;
+    border: 4px solid #FDFFFC;
     border-radius: 2px;
     height: 30px;
     width: 30px;
@@ -133,7 +140,6 @@ section {
 
 #section1 {
     background-color: #010d18;
-    color: white;
     padding-top: 5%;
     display: flex;
 }
@@ -147,4 +153,56 @@ section {
     width: 100%;
     height: auto;
 }
+
+#section2 {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+    width: 100%;
+}
+.skillsHeader {
+    margin-bottom: 15px;
+}
+
+.skillsColumn {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 22%;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.skillsList {
+    list-style: none;
+}
+
+.skillsItem {
+    color: #e8ebe6;
+    font-size: 1.3rem;
+    margin: 8px;
+    text-align: left;
+    
+}
+
+.skillsIcon {
+    float: right !important;
+}
+
+.certifiedSkill {
+    margin-top: 16px;
+    color: #ff9f1c !important;
+}
+
+.skillsColumnIcon {
+    color: #FDFFFC;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+
 
