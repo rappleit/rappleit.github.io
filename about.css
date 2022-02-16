@@ -170,8 +170,8 @@ section {
 .skillsColumn {
     display: inline-flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 22%;
+    height: auto;
     margin-left: 55px;
     margin-right: 55px;
 }
@@ -184,16 +184,20 @@ section {
     color: #e8ebe6;
     font-size: 1.3rem;
     margin: 8px;
-    text-align: left;
+    text-align: left;   
+    height: 100%;
+    
     
 }
 
 .skillsIcon {
     float: right !important;
+    vertical-align: middle !important;
+    height: 24px;
+    
 }
 
 .certifiedSkill {
-    margin-top: 16px;
     color: #ff9f1c !important;
 }
 
