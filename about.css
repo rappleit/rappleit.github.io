@@ -159,10 +159,6 @@ section {
     text-align: center;
 }
 
-.skills {
-    text-align: center;
-    width: 100%;
-}
 .skillsHeader {
     margin-bottom: 15px;
 }
@@ -186,8 +182,6 @@ section {
     margin: 8px;
     text-align: left;   
     height: 100%;
-    
-    
 }
 
 .skillsIcon {
@@ -207,6 +201,130 @@ section {
     margin-top: 15px;
 }
 
+#section3 {
+    background-color: #010d18;
+    padding-top: 5%;
+    text-align: center;
+}
 
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 25%;
+}
+
+
+.timelineEvent {
+    background: #FDFFFC;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.timelineEvent::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #268b81;
+    position: absolute;
+    top: 65%;
+    left: -4.15rem;
+    z-index: 0;
+}
+
+
+.timelineHead {
+    border-radius: 8px 0 0 8px;
+    color: #FDFFFC;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-basis: 20%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.timelineIcon {
+    position: absolute;
+    font-size: 2.2rem;
+    left: -6.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+
+}
+
+.timelineHeadDate {
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+.timelineContent {
+    padding: 20px;
+    flex-basis: 80%;
+    text-align: left;
+}
+
+.timelineContentTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+#timelineEvent1 .timelineHead {
+    background: #2ec4b6;
+}
+
+#timelineEvent1 .timelineIcon {
+    background: #2ec4b6;
+}
+
+#timelineEvent1.timelineEvent::after {
+    background: #2ec4b6;
+}
+
+
+#timelineEvent2 .timelineHead{
+    background: #ff9f1c;
+}
+
+#timelineEvent2 .timelineIcon {
+    background: #ff9f1c;
+}
+
+#timelineEvent2.timelineEvent::after {
+    background: #bd7715;
+}
+
+#timelineEvent3 .timelineHead{
+    background: #b563f8;
+}
+
+#timelineEvent3 .timelineIcon {
+    background: #b563f8;
+}
+
+#timelineEvent3.timelineEvent::after {
+    background: #6c329b;
+}
+
+#timelineEvent4 .timelineHead{
+    background: #e71d36;
+}
+
+#timelineEvent4 .timelineIcon {
+    background: #e71d36;
+}
+
+#timelineEvent4.timelineEvent::after {
+    display: none;
+}
 
 
