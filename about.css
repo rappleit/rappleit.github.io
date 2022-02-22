@@ -89,8 +89,14 @@ p > a:hover {
 }
 
 section {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding-bottom: 3%;
+}
+
+#titleSection {
+    height: 100vh !important;
+
 }
 
 .scrollDown {
@@ -136,6 +142,30 @@ section {
         opacity: 0;
         top: 90%;
     }
+}
+
+.scrollDownLabel {
+    position: fixed;
+    bottom: 65px;
+    writing-mode: vertical-rl;
+    opacity: 0;
+    left: 12px;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    transition: 0.4s ease-in-out;
+}
+
+.scrollDownLabel::after {
+    content: "";
+    width: 2px;
+    height: 64px;
+    background: #e8ebe6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -80px;
+    opacity: 75%;
 }
 
 #section1 {
