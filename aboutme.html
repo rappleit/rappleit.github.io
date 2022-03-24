@@ -7,8 +7,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="aboutme.css">
+        <link rel="stylesheet" href="nav.css">
         <script src="https://kit.fontawesome.com/1b641f06db.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="nav.js" defer></script>
     </head>
     <header>
         <div class="headerName">
@@ -16,7 +18,46 @@
         </div>
         <nav>
             <div class="navBar">
-                
+                <div class="navToggle navBarHolder" data-activated="false">
+                   
+                        <i id="navToggleIcon" class="fa-solid fa-bars fa-xl"></i>
+                </div>
+                <ul class="navBarOptions">
+                    <li>
+                        <span class="navLabel">Home</span>
+                        <a href="index.html">
+                        <div class="navBarHolder">
+                            <i class="fa-solid fa-house fa-xl"></i>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="navLabel">About Me</span>
+                        <a href="aboutme.html">
+                        <div class="navBarHolder">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="navLabel">Skills</span>
+                        <div class="navBarHolder">
+                            <i class="fa-solid fa-gear fa-xl"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="navLabel">Experience</span>
+                        <div class="navBarHolder">
+                            <i class="fa-solid fa-briefcase fa-xl"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="navLabel">Projects</span>
+                        <div class="navBarHolder">
+                            <i class="fa-solid fa-cubes fa-xl"></i>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
         
@@ -40,9 +81,9 @@
             </section>
             <section>
                 <div class="aboutButtons">
-                    <a href="skills.html" class="aboutButtonsLink">My Skills</a>
-                    <a href="skills.html" class="aboutButtonsLink">My Experience</a>
-                    <a href="skills.html" class="aboutButtonsLink">My Projects</a>
+                    <a href="#" class="aboutButtonsLink">My Skills</a>
+                    <a href="#" class="aboutButtonsLink">My Experience</a>
+                    <a href="#" class="aboutButtonsLink">My Projects</a>
                 </div>
             </section>
             

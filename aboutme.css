@@ -5,6 +5,7 @@
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
     --light-bg-color: #163C6D;
+    --dark-bg-color: #031519;
   }
 
 h2 {
@@ -167,6 +168,4 @@ section {
     0% {opacity:0;}
     100% {opacity:1;}
   }
-
-
 
