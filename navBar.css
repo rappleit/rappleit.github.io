@@ -1,3 +1,12 @@
+:root {
+    --main-bg-color: #03242C;
+    --accent-color-1: #43C1BA;
+    --accent-color-1-highlight: #4FCEC8;
+    --accent-color-2: #FFDE67;
+    --text-color: #E9E6E0;
+    --light-bg-color: #163C6D;
+  }
+
 .navBar {
     position: absolute;
     right: 0;
@@ -18,9 +27,9 @@
 }
 
 .navLink {
-    color: #FDFFFC;
+    color: var(--text-color);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 1.3rem;
     border-radius: 50%;
     width: 40px;
@@ -28,6 +37,8 @@
     padding: 20px;
     transition: width 0.3s ease-out;
     opacity: 0;
+    border: 3px solid var(--accent-color-1);
+    
 }
 
 .navLink i {
@@ -38,29 +49,9 @@
     opacity: 0;
 }
 
-#aboutMe {
-    background-color: #e71d36;
+.navLink:hover {
+    background: var(--accent-color-1);
+    color: var(--main-bg-color);
 }
-
-#aboutMe:hover {
-    background-color: #fd3950;
-}
-
-#experience {
-    background-color: #ff9f1c;
-}
-
-#experience:hover {
-    background-color: #ffb349;
-}
-
-#projects {
-    background-color: #2ec4b6;
-}
-
-#projects:hover {
-    background-color: #48ddce;
-}
-
 
 

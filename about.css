@@ -184,10 +184,6 @@ section {
     height: auto;
 }
 
-#section2 {
-    padding-top: 5%;
-    text-align: center;
-}
 
 .skillsHeader {
     margin-bottom: 15px;
@@ -230,6 +226,12 @@ section {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
+#section2, #section4 {
+    padding-top: 5%;
+    text-align: center;
+}
+
 
 #section3 {
     background-color: #010d18;
@@ -356,5 +358,88 @@ section {
 #timelineEvent4.timelineEvent::after {
     display: none;
 }
+
+.interestGrid {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: minmax(200px, auto);
+    color: #FDFFFC;
+    margin: 40px;
+    grid-auto-flow: dense;
+    gap: 30px;
+    height: 350px;
+    
+}
+
+.interestGrid p{
+    font-size: 0.9rem;
+    margin: 10px;
+}
+
+.interestGrid h3 {
+    margin: 10px;
+}
+
+.interestBox {
+    background: transparent;
+    display: grid;
+    grid-column: span 1;
+    perspective: 1000px;
+    
+}
+
+.interestContent {
+    background: #173b58;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.interestContentFront, .interestContentBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.interestContentFront {
+    background: #173b58;
+}
+
+.interestContentBack {
+    transform: rotateY(180deg);
+}
+
+.interestBox:hover .interestContent{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .interestGrid {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+    .interestGrid .interestBox {
+        grid-column: unset!important;
+        grid-row: unset !important;
+    }
+}
+
 
 
