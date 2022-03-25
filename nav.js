@@ -8,11 +8,13 @@ $(document).ready(function(){
             $("#navToggleIcon").removeClass("fa-bars");
             $("#navToggleIcon").addClass("fa-xmark");
             $(".navToggle").attr("data-activated", "true");
+            $(".overlay").css({'opacity': '1'});
         } else if (activated === "true") {
             $(".navBarOptions").css({'opacity': '0', 'transform': 'translateY(-20px)'});
             $("#navToggleIcon").removeClass("fa-xmark");
             $("#navToggleIcon").addClass("fa-bars");
             $(".navToggle").attr("data-activated", "false");
+            $(".overlay").css({'opacity': '0'});
         }
         
     });
