@@ -4,107 +4,76 @@
     --accent-color-1-highlight: #4FCEC8;
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
-    --light-bg-color: #163C6D;
+    --light-bg-color: #134449;
     --dark-bg-color: #031519;
-  }
-
-
-.navBar {
-    position: absolute;
-    right: 80px;
-    z-index: 999;
 }
 
-.navToggle {
-    border-radius: 50%;
-}
-
-.navToggle[data-activated="true"] {
-    color: var(--accent-color-2);
-}
-
-.navToggle:hover[data-activated="false"] {
-    color: var(--accent-color-1);
-    background: var(--dark-bg-color);
+header {
+    font-size: 1.4rem;
+    padding: 30px 0;
+    margin: 0 3%;
+    animation: fadeIn 1s ease-in-out;
     
 }
 
-.navToggle:hover[data-activated="true"] {
-    color: var(--dark-bg-color);
-    
-}
-
-.navBarHolder {
+header a {
     color: var(--text-color);
-    width: 70px;
-    height: 70px;
+    text-decoration: none;
     transition: 0.3s ease-in-out;
-    border-radius: 50%;
-    margin: 10px 0;
-    background: var(--main-bg-color);
-    box-shadow: 0px 10px 12px rgb(0, 0, 0, 0.5);
 }
 
-
-.navBarHolder i {
+.headerBar {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    
+    justify-content: space-between;
+
 }
 
-.navBarHolder:hover {
-    color: var(--dark-bg-color);
-    background: var(--text-color);
+.headerName a:hover{
+    color: var(--accent-color-1);
 }
 
-.navBarOptions {
-    padding-left: 0;
+.nav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
     list-style: none;
-    position: absolute;
-    margin: 0;
-    right: 0;
-    transition: 0.4s ease-in-out;
-    opacity: 0;
-    transform: translateY(-20px);
-    
+    padding: 0;
+    margin: 0 auto;
+}
+.navItem {
+    margin: 0 20px;
 }
 
-
-.navBarOptions li {
-    display: flex;
-    justify-content: flex-end;
+.navItem a {
+    transition: 0.3s ease-in-out;
 }
 
-.navLabel {
-    align-self: center;
-    white-space: nowrap;
-    font-size: 1.2rem;
-    color: var(--dark-bg-color);
-    padding: 10px 20px;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
-    margin-right: 20px;
-    background: var(--text-color);
-    box-shadow: 0px 10px 12px rgb(0, 0, 0, 0.5);
+.navItem a:hover {
+    color: var( --accent-color-1);
 }
 
-.navBarOptions li:hover > .navLabel {
-    opacity: 1;
-}
-
-.overlay {
-    position: fixed;
+.navItem a::after {
+    content: "";
+    position: relative;
+    display: block;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 2px;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 100;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
+    background-color: var(--accent-color-1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navItem a:hover::after {
+    transform: scaleX(1);
+  }
 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
+
+  
