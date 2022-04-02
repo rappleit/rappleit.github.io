@@ -27,16 +27,16 @@ p {
 }
 
 p > a {
-    color: var(--accent-color-1-highlight);
-    text-decoration: none;
-}
-
-p > a:hover {
+    color: var(--accent-color-1);
     text-decoration: underline;
 }
 
-span {
+p > a:hover {
     color: var(--accent-color-1-highlight);
+}
+
+span {
+    color: var(--accent-color-1);
 }
 
 html {
