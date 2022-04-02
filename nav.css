@@ -64,6 +64,7 @@ header a {
     left: 0;
     background-color: var(--accent-color-1);
     transform: scaleX(0);
+    transform-origin: top left;
     transition: transform 0.3s ease;
   }
   
