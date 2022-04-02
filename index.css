@@ -4,7 +4,7 @@
     --accent-color-1-highlight: #4FCEC8;
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
-    --light-bg-color: #163C6D;
+    --light-bg-color: #05303B;
   }
 
   .navBar {
@@ -62,7 +62,7 @@ html {
 
 
 body {
-    background-color: var(--main-bg-color);
+    background: radial-gradient(var(--light-bg-color), var(--main-bg-color));
 }
 
 .titleBox {
@@ -82,6 +82,8 @@ body {
     border-right: 2px solid var(--text-color);
     vertical-align: middle;
     margin-bottom: 0px;
+    animation: typeline 2.15s;
+    animation-fill-mode: forwards;
 }
 
 .anim-typewriter {
@@ -93,6 +95,11 @@ body {
 @keyframes typewriter{
     from{width: 0;}
     to{width: 100%;}
+}
+@keyframes typeline {
+    0% {border-right: 2px solid var(--text-color);}
+    98% {border-right: 2px solid var(--text-color);}
+    100% {border-right: none;}
 }
 
 .socialButtonList {

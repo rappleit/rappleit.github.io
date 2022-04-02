@@ -4,7 +4,7 @@
     --accent-color-1-highlight: #4FCEC8;
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
-    --light-bg-color: #163C6D;
+    --light-bg-color: #05303B;
   }
 
 html {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background: radial-gradient(var(--light-bg-color), var(--main-bg-color));
 }
 
 .titleBox {

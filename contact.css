@@ -4,7 +4,7 @@
     --accent-color-1-highlight: #4FCEC8;
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
-    --light-bg-color: #134449;
+    --light-bg-color: #05303B;
     --dark-bg-color: #031519;
 }
 
@@ -46,7 +46,7 @@ html {
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background: radial-gradient(var(--light-bg-color), var(--main-bg-color));
     height: 100%;
     overflow: overlay;
     animation: fadeIn 1s ease-in-out;
