@@ -4,8 +4,10 @@
     --accent-color-1-highlight: #4FCEC8;
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
-    --light-bg-color: #05303B;
+    --light-bg-color: #073E4E;
+    --dark-bg-color: #031519;
   }
+
   
 header {
     font-size: 1.4rem;

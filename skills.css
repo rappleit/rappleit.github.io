@@ -4,7 +4,7 @@
     --accent-color-1-highlight: #4FCEC8;
     --accent-color-2: #FFDE67;
     --text-color: #E9E6E0;
-    --light-bg-color: #05303B;
+    --light-bg-color: #073E4E;
     --dark-bg-color: #031519;
   }
 
@@ -40,30 +40,27 @@ span {
 }
 
 html {
-    min-height: 100%;
+    min-height: 00%;
     font-family: 'JetBrains Mono', monospace;
     background-color: var(--main-bg-color);
-   
 }
 
 
 body {
     background: radial-gradient(var(--light-bg-color), var(--main-bg-color));
-    height: 100%;
-    overflow: overlay;
-    margin: 0;
-    
+    padding-bottom: 30px;
 }
 
 .titleBox {
     align-items: center;
-    margin-left: 3%;
+    margin-bottom: 30px;
+    margin-left: 4%;
 }
 
 .titleText {
     color: var(--text-color);
     font-size: 2.4rem;
-    overflow: hidden;
+    overflow: overlay;
     white-space: nowrap;
     animation: typeline 1.52s;
     margin-bottom: 0px;
@@ -87,54 +84,83 @@ body {
     100% {border-right: none;}
 }
 
-section {
-    opacity: 0;
-    display: flex;
-    animation: fadeIn 0.8s ease-in-out 1.4s;
-    animation-fill-mode: forwards;
-
+.scrollDownLabel {
+    position: fixed;
+    bottom: 65px;
+    writing-mode: vertical-rl;
+    left: 2px;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    transition: 0.4s ease-in-out;
 }
 
-.intro {
-    margin-left: 3%;
-    margin-right: 2%;
-    width: 100%;
-    margin-bottom: 1%;
+.scrollDownLabel::after {
+    content: "";
+    width: 2px;
+    height: 64px;
+    background: #e8ebe6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -80px;
+    opacity: 75%;
+}
+
+.skillsSection {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.skillsContent {
+    display: flex;
+}
+
+.skillsHeader {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 200px;
     
 }
 
-.avatar {
-    margin-left: 10%;
-    width: 83%;
-    height: auto;
+.skillsHeader h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    white-space: normal;
 }
 
-.aboutButtons {
-    margin-left: 3%;
-    margin-bottom: 3%;
+.skillsHeader i {
+    margin-right: 20px;
 }
 
-.aboutButtonsLink {
-    color: var(--text-color);
-    text-decoration: none;
+.skillsList {
+    display: flex;
+    gap: 3px;
+    margin: 5px 30px;
+    
+}
+
+.skillsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    margin-top: 20px;
+    padding: 30px 0;
+    
+}
+
+.skillsItem img {
+    margin-bottom: 20px;
+    height: 36px;
+}
+
+.skillsItem p {
     text-align: center;
-    border: 2px solid var(--text-color);
-    margin-right: 15px;
-    padding: 15px 30px;
-    transition: all 0.25s ease-in;
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, #03242C 50%, #E9E6E0 50%);
+    font-size: 1.1rem;
+    margin: 0 5px;
 }
-
-.aboutButtonsLink:hover {
-    color: var(--main-bg-color);
-    background-position: bottom right;
-}
-
-
-
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-
